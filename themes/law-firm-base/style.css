@@ -1,0 +1,48 @@
+/*
+Theme Name: Law Firm Base
+Theme URI: https://example.com/
+Author: Exercise Submission
+Description: Minimal parent theme used for the Featured Cases child theme exercise.
+Version: 1.0.0
+Text Domain: law-firm-base
+*/
+
+/*
+ * Link styles
+ * Based on Twenty Twenty-Five.
+ */
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.1em;
+}
+
+/* Focus styles */
+:focus {
+	outline-width: 2px;
+	outline-style: solid;
+	outline-offset: 2px;
+}
+
+/* Improve text wrapping for headings and long copy. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+caption,
+figcaption,
+p {
+	text-wrap: pretty;
+}
+
+/* Match the default handling for "read more" links. */
+.more-link {
+	display: block;
+}
+
+/* Prevent long preformatted text from forcing layout overflow. */
+pre {
+	overflow-x: auto;
+}
