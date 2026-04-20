@@ -61,3 +61,14 @@ wp-content/
     `-- law-firm-base/
         `-- page-featured-cases.php
 ```
+
+## Observation
+
+WordPress will look for a single template for custom post types through the normal template hierarchy, for example `single-featured_case.php`.
+
+From a WordPress best-practice perspective, there are two valid approaches:
+
+- If individual Featured Case pages are part of the product requirement, the theme should provide a dedicated single template for that CPT.
+- If individual Featured Case pages are not meant to be publicly viewed, access should be intentionally limited instead of leaving the single view behavior undefined.
+
+For this exercise, the requirement is only to display Featured Cases through a page template, so a dedicated single template was not necessary. In a production implementation, the next step would be to either add `single-featured_case.php` or explicitly disable direct single access depending on the content strategy.
